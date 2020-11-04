@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+body {
+    background-color: #ADD8E6;
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#addTodo {
+    background-color: rgb(240, 240, 240);
+    width: 820px;
+    height: 35px;
+    border: none;
+    border-radius: 0;
+    text-align: right;
+    padding-right: 15px;
+    transition: background-color 0.3s ease 0s;
+}
+
+#addTodo:focus {
+    background-color: rgb(250, 250, 250);
+    border-color:  #2773ff;
+    box-shadow: 0 0 8px 0 #2773ff;
+}
+
+::placeholder {
+    color: #424242;
+    font-family: 'Assistant', sans-serif;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form button {
+    width: 120px;
+    height: 37px;
+    border: none;
+    background-color: #1E90FF;
+    color: #fff;
+    font-family: 'Assistant', sans-serif;
+    transition: background-color 0.3s ease 0s;
+}
+
+.form button:hover {
+    background-color: #0075eb;
+}
+
+li {
+    padding-top: 17px;
+    background-color: rgb(105, 105, 105);
+    width: 940px;
+    height: 40px;
+    color: #fff;
+    font-family: 'Assistant', sans-serif;
+    padding-right: 15px;
+    text-align: right;
+}
+
+ul {
+    display: table;
+    padding: 0;
+    margin: 40px auto;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    list-style: none;
+}
+
+
+.title2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(128, 128, 128);
+    width: 1060px;
+    height: 40px;
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-size: 35px;
+    padding-right: 15px;
+}
+
+#del-btn {
+    margin: 40px auto;
+    display: block;
+    width: 450px;
+    height: 40px;
+    background-color: rgb(255, 66, 66);
+    border: none;
+    color: #fff;
+    font-family: 'Assistant', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.6), 0 6px 20px 0 rgba(255, 255, 255, 0.6);
+    transition: background-color 0.3s ease 0s;
+}
+
+#del-btn:hover {
+    background-color: rgb(255, 41, 41);
+}
+
+.list-i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+#delBtn {
+    width: 120px;
+    height: 57px;
+    border: none;
+    background-color: rgb(255, 66, 66);
+    color: #fff;
+    font-family: 'Assistant', sans-serif;
+    transition: background-color 0.3s ease 0s;
+}
+
+#delBtn:hover {
+    background-color: rgb(255, 41, 41);
+}
+
+
+.alert {
+    padding: 20px;
+    background-color: #f7493c; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: left;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }
+
+  @media (min-width:320px)  {
+    li {
+        width: 150px;
+        font-size: 12px;
+    }
+    .title2 {
+        width: 270px;
+        font-size: 25px;
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+    #del-btn {
+        width: 250px;
+    }
+    .title {
+        font-size: 25px;
+    }
+    #addTodo {
+        width: 250px;
+    }
+  }
+
+  @media (min-width:480px)  {
+    li {
+        width: 250px;
+        font-size: 14px;
+    }
+    .title2 {
+        width: 370px;
+        font-size: 27px;
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+    #del-btn {
+        width: 350px;
+    }
+    .title {
+        font-size: 27px;
+    }
+    #addTodo {
+        width: 320px;
+    }
+  }
+
+  
+  @media (min-width:600px)  {
+    li {
+        width: 400px;
+        font-size: 15px;
+    }
+    .title2 {
+        width: 520px;
+        font-size: 29px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    #del-btn {
+        width: 450px;
+    }
+    .title {
+        font-size: 29px;
+    }
+    #addTodo {
+        width: 420px;
+    }
+  }
+
+  @media (min-width:801px)  {
+    li {
+        width: 500px;
+        font-size: 16px;
+    }
+    .title2 {
+        width: 620px;
+        font-size: 31px;
+        padding-top: 10px;
+        padding-bottom: 7px;
+    }
+    #del-btn {
+        width: 550px;
+    }
+    .title {
+        font-size: 31px;
+    }
+    #addTodo {
+        width: 520px;
+    }
+  }
+
+  @media (min-width:1025px)  {
+    li {
+        width: 800px;
+        font-size: 17px;
+    }
+    .title2 {
+        width: 920px;
+        font-size: 33px;
+        padding-top: 10px;
+        padding-bottom: 9px;
+    }
+    #del-btn {
+        width: 600px;
+    }
+    .title {
+        font-size: 33px;
+    }
+    #addTodo {
+        width: 720px;
+    }
+  }
+
+  @media (min-width:1281px)  {
+    li {
+        width: 940px;
+        font-size: 18px;
+    }
+    .title2 {
+        width: 1060px;
+        font-size: 35px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #del-btn {
+        width: 650px;
+    }
+    .title {
+        font-size: 35px;
+    }
+    #addTodo {
+        width: 820px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
